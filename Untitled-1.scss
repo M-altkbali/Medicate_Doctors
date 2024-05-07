@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.activate,
+.btn-header:hover {
+    background-color: rgb(197, 110, 110);
+    color: white;
+}
+header {
+    div.topbar-main {
+        height: fit-content;
+        padding: 1%;
+        .container {
+        }
+    }
+
+    div.navbar-custom {
+        width: 100%;
+
+        .container {
+            width: 100%;
+            #navigation {
+                width: 100%;
+                ul.navigation-menu {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    li.home {
+                        margin: 1.5% 1%;
+                    }
+
+                    li.button {
+                        background-color: rgb(35, 50, 65);
+
+                        width: 20%;
+                        padding: 1%;
+                        margin: 1%;
+
+                        a {
+                            img {
+                                margin: 0 0 0 2%;
+                            }
+                        }
+
+                        ul {
+                            li {
+                                margin: 2%;
+                                ul.submenu {
+                                    width: fit-content;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .container_ {
+        margin: 5% 10%;
+
+        .title {
+            padding: 15px 25px 15px 25px;
+            line-height: 22px;
+            font-size: 18px;
+            background-color: #313a46;
+            color: #ffffff;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            background-color: white;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div.inputs {
+                display: flex;
+                justify-content: center;
+                margin: 2% 0;
+                .comp {
+                    margin: 0 2%;
+                    select {
+                        width: 200px;
+                    }
+                    select,
+                    input {
+                        // background-color: #f3f3f3;
+                    }
+                }
+            }
+            .buttons {
+            }
+            .appo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 30%;
+                background-color: rgba(47, 79, 79, 0.26);
+                padding: 2%;
+                margin: 5%;
+                .weeks {
+                    display: flex;
+                    flex-direction: column;
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                    }
+                }
+                .time {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .container_add-doctor {
+        // display: none;
+    }
+
+    .container_update-doctor {
+        // display: none;
+        .col-sm-12 {
+            .panel {
+                .panel-body {
+                    div {
+                        table {
+                            thead {
+                                tr {
+                                    th {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container_add-appointment {
+        // display: none;
+    }
+
+    .container_add-medicine {
+        // display: none;
+
+        form {
+            div.inputs {
+                .comp {
+                    .concentration {
+                        display: flex;
+
+                        align-items: center;
+
+                        .inputs {
+                            display: flex;
+                            flex-direction: column;
+                            input {
+                                margin: 2%;
+                            }
+                        }
+                        i {
+                            margin: 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

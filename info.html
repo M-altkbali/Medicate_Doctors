@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الطبي للمريض</title>
+
+    <link rel="stylesheet" href="css/scss/MainSASS.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+</head>
+
+<body id="dir">
+
+    <div class="container_medical_file">
+
+        <header>
+
+            <img src="img/medicate_logo.png" alt="">
+            <div class="trans">
+                <ul>
+                    <div>
+                        <li class="translatear" id="ar"> AR</li>
+                    </div>
+                    <div>
+                        <li class="translateen" id="en">EN</li>
+                    </div>
+                    <div>
+                        <li>FR</li>
+                    </div>
+                </ul>
+            </div>
+        </header>
+
+        <section class="patient_data">
+            <fieldset>
+                <legend key="patient_data"> &nbsp; Patient Data &nbsp; </legend>
+
+                <div class="image"><img src="img/user.png" alt="" width="100%"></div>
+
+                <div>
+                    <div>
+                        <label for="" key="id">ID</label>
+                        <input type="number" dir="auto">
+                    </div>
+                    <div><label for="" key="name">Name</label>
+                        <input type="text" dir="auto">
+                    </div>
+                    <div><label for="" key="date">Date</label>
+                        <input type="date" dir="auto">
+                    </div>
+                    <div><label for="" key="gender">Gender</label>
+                        <select name="" id="" dir="auto">
+                            <option value="" key="select">Select ..</option>
+                            <option value="" key="female">Female</option>
+                            <option value="" key="male">Male</option>
+                        </select>
+                    </div>
+                    <div><label for="" key="job">Job</label>
+                        <input type="text">
+                    </div>
+                    <div><label for="" key="insurance">Insurance</label>
+                        <select name="" id="" dir="auto">
+                            <option value="" key="select">Select ..</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div><label for="" key="nationality">Nationality</label>
+                        <select name="" id="" dir="auto">
+                            <option value="" key="select">Select ..</option>
+                            <option value="" key="libyan">Libyan</option>
+                            <option value="" key="tunisian">Tunisian</option>
+                            <option value="" key="egyptian">Egyptian</option>
+                            <option value="" key="iraqi">Iraqi</option>
+                        </select>
+                    </div>
+                </div>
+
+
+            </fieldset>
+        </section>
+
+        <section class="main">
+
+            <div class="navbar">
+                <button class="active">
+                    <img src="img/applicant.png" alt="">
+                    <span key="medical_file"> Medical file</span>
+                </button>
+                <button>
+                    <img src="img/product_documents.png" alt="">
+                    <span key="previous_checks">Previous checks</span>
+                </button>
+                <button>
+                    <img src="img/calendar.png" alt="">
+                    <span key="treatment_plan">Treatment plan</span>
+                </button>
+                <button>
+                    <img src="img/test_results.png" alt="">
+                    <span key="test_results">Test results</span>
+                </button>
+                <button>
+                    <img src="img/x-ray.png" alt="">
+                    <span key="radiology_results">Radiology results</span>
+                </button>
+                <button>
+                    <img src="img/chart_report.png" alt="">
+                    <span key="medical_reports">Medical reports</span>
+                </button>
+            </div>
+
+            <div class="info">
+
+                <div class="part1">
+                    <div class="inputs">
+                        <fieldset class="vital_modifiers">
+                            <legend key="vital_modifiers"> &nbsp; Vital modifiers &nbsp; </legend>
+                            <div>
+                                <div>
+                                    <label for="" key="blood_pressure">Blood pressure</label>
+                                    <input type="number" dir="auto">
+                                </div>
+                                <div>
+                                    <label for="" key="respiratory_rate">Respiratory rate</label>
+                                    <input type="text" dir="auto">
+                                </div>
+                                <div>
+                                    <label for="" key="pulse_rate">Pulse rate</label>
+                                    <input type="date" dir="auto">
+                                </div>
+                                <div>
+                                    <label for="" key="blood_type">Blood type</label>
+                                    <select name="" id="" dir="auto">
+                                        <option value="" key="select">Select ..</option>
+                                        <option value="" key="female">Female</option>
+                                        <option value="" key="male">Male</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="" key="the_weight">The weight</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label for="" key="length">Length</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset class="regular_habits">
+                            <legend key="regular_habits"> &nbsp; Regular habits &nbsp; </legend>
+                            <div class="check">
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="" key="eat_fruits">Eat fruits</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="" key="eat_vegetables">Eat vegetables</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="" key="eating_meat">Eating meat</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="" key="smokes">Smokes</label>
+                                     <input type="number" min="0" max="100" value="0">
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="" key="drinks_alcohol">Drinks alcohol</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox">
+                                    <label for="" key="drugs">Drugs</label>
+                                </div>
+
+                            </div>
+
+                            <div class="select">
+                                <div>
+                                    <label for="" key="effort_at_work">Effort at work</label>
+                                    <select name="" id="">
+                                        <option value="" key="high">High</option>
+                                        <option value="" key="medium">medium</option>
+                                        <option value="" key="low">low</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="" key="exercise_on_the_go">Exercise on the go</label>
+                                    <select name="" id="">
+                                        <option value="" key="high">High</option>
+                                        <option value="" key="medium">Medium</option>
+                                        <option value="" key="low">Low</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="" key="The_effort_during">The effort during the holidays</label>
+                                    <select name="" id="">
+                                        <option value="" key="high">High</option>
+                                        <option value="" key="medium">Medium</option>
+                                        <option value="" key="low">Low</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </div>
+
+                    <div class="nots"><label for="" key="notes">Notes</label><textarea name="" id="" cols="0"
+                            rows="0"></textarea>
+                    </div>
+                </div>
+
+                <div class="part2">
+
+                    <div class="chronic_diseases div_">
+                        <span class="title" key="sensitivity">Sensitivity</span>
+                        <div class="cont">
+                            <ul>
+                                <li>Penicillin</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="current_medications div_">
+                        <span class="title" key="current_medications">Current medications</span>
+                        <div class="cont">
+                            <ul>
+                                <li>Iron deficiency anaemia</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Sensitivity div_">
+                        <span class="title" key="chronic_diseases">Chronic diseases</span>
+                        <div class="cont">
+                            <ul>
+                                <li>Anemia</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Sensitivity div_">
+                        <span class="title" key="family_diseases">Family diseases</span>
+                        <div class="cont">
+                            <ul>
+                                <li>asthma</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Sensitivity div_">
+                        <span class="title" key="vaccinations">Vaccinations</span>
+                        <div class="cont">
+                            <ul>
+                                <li>Measles vaccination</li>
+                                <li>Coronavirus vaccination</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Sensitivity div_">
+                        <span class="title" key="Serious_and_previous">Serious diseases and previous surgeries</span>
+                        <div class="cont">
+                            <ul>
+                                <li>tonsillectomy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+<script src="dash/js/jquery.min.js"></script>
+<script src="js/trany.js"></script>
+
+</html>

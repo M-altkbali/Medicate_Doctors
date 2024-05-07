@@ -1,0 +1,892 @@
+@import url("https://fonts.googleapis.com/cs//s2?family=Raleway:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.activate,
+.btn-header:hover {
+  background-color: #c56e6e;
+  color: white;
+}
+
+header div.topbar-main {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1%;
+}
+
+header div.navbar-custom {
+  width: 100%;
+}
+
+header div.navbar-custom .container {
+  width: 100%;
+}
+
+header div.navbar-custom .container #navigation {
+  width: 100%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.home {
+  margin: 1.5% 1%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.button {
+  background-color: #233241;
+  width: 20%;
+  padding: 1%;
+  margin: 1%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.button a img {
+  margin: 0 0 0 2%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.button ul li {
+  margin: 2%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.button ul li ul.submenu {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main .container_ {
+  margin: 5% 10%;
+}
+
+main .container_ .title {
+  padding: 15px 25px 15px 25px;
+  line-height: 22px;
+  font-size: 18px;
+  background-color: #313a46;
+  color: #ffffff;
+  margin: 0;
+}
+
+main .container_ .content {
+  padding: 20px;
+  background-color: white;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container_ .content div.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2% 0;
+}
+
+main .container_ .content div.inputs .comp {
+  margin: 0 2%;
+}
+
+main .container_ .content div.inputs .comp select {
+  width: 200px;
+}
+
+main .container_ .content .appo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+  background-color: rgba(47, 79, 79, 0.26);
+  padding: 2%;
+  margin: 5%;
+}
+
+main .container_ .content .appo .weeks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+main .container_ .content .appo .weeks .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0% 0 4% 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container_ .content .appo .weeks .day .time {
+  margin: 5%;
+  width: 40%;
+}
+
+main .container_ .content .appo .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  main .container_add-doctor form .inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .container_update-doctor .col-sm-12 .panel .panel-body div table thead tr th {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  main .container_add-appointment .content .inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .container_add-appointment .content .appo {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .container_add-appointment .content .appo .weeks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .container_add-medicine form div.inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .container_add-medicine form div.inputs .comp .concentration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container_add-medicine form div.inputs .comp .concentration .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container_add-medicine form div.inputs .comp .concentration .inputs input {
+  margin: 2%;
+}
+
+main .container_add-medicine form div.inputs .comp .concentration i {
+  margin: 5%;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid cadetblue;
+  border-radius: 8px;
+  padding: 1% 2%;
+  width: 100%;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+button,
+a,
+select,
+input[type="date"] {
+  cursor: pointer;
+}
+
+.container_medical_file .main .navbar button.active {
+  background-color: #084949;
+  color: white;
+}
+
+.container_medical_file header {
+  width: 100%;
+  background-color: #084949;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container_medical_file header img {
+  width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file header img {
+    width: 200px;
+  }
+}
+
+.container_medical_file header .trans {
+  margin: 3% 10% 0 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file header .trans {
+    margin: 6% 20% 0 0%;
+  }
+}
+
+.container_medical_file header .trans ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container_medical_file header .trans ul div {
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0 5%;
+  padding: 5% 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file header .trans ul div {
+    padding: 5% 10%;
+  }
+}
+
+.container_medical_file header .trans ul div:hover {
+  background-color: #749e9e6e;
+}
+
+.container_medical_file header .trans ul div li {
+  font-size: 1.2vmax;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file header .trans ul div li {
+    font-size: 2vmax;
+  }
+}
+
+.container_medical_file section.patient_data fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: 3% 0 0 3%;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.patient_data fieldset {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 4vmax;
+  }
+}
+
+.container_medical_file section.patient_data fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.patient_data fieldset div {
+    margin: 2%;
+  }
+}
+
+.container_medical_file section.patient_data fieldset div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1% 1%;
+  width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.patient_data fieldset div div {
+    width: 90%;
+  }
+}
+
+.container_medical_file section.patient_data fieldset div div label {
+  font-size: 1.2vmax;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.patient_data fieldset div div label {
+    font-size: 3vmax;
+  }
+}
+
+.container_medical_file section.patient_data fieldset div div input,
+.container_medical_file section.patient_data fieldset div div select {
+  font-size: 1.2vmax;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.patient_data fieldset div div input,
+  .container_medical_file section.patient_data fieldset div div select {
+    font-size: 2.5vmax;
+  }
+}
+
+.container_medical_file section.patient_data fieldset .image {
+  width: 150px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.container_medical_file section.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container_medical_file section.main .navbar {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.5px solid #ddd;
+  border-radius: 10px 0 0 10px;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin: 1% 1% 2% 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.container_medical_file section.main .navbar button {
+  width: 80%;
+  margin: 6% 0;
+  padding: 10%;
+  background-color: transparent;
+  border: 1px solid #084949;
+  border-radius: 5px;
+  font-size: 1.2vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .navbar button {
+    width: 30%;
+    padding: 3%;
+    margin: 1%;
+    font-size: 2.5vmax;
+  }
+}
+
+.container_medical_file section.main .navbar button:hover {
+  color: #fff;
+  background-color: #084949;
+}
+
+.container_medical_file section.main .navbar button i {
+  font-size: 1.5vmax;
+  margin: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .navbar button i {
+    font-size: 2.5vmax;
+  }
+}
+
+.container_medical_file section.main .info {
+  width: 80%;
+  border: 0.5px solid #ddd;
+  border-radius: 0 10px 10px 0;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info {
+    width: 100%;
+  }
+}
+
+.container_medical_file section.main .info .part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs {
+    width: 100%;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers {
+  margin: 2% 1%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers {
+    padding-bottom: 5%;
+    font-size: 4vmax;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers div div {
+  width: 30%;
+  margin: 1% 1%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers div div {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers div div label {
+    font-size: 2.5vmax;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers div div input,
+  .container_medical_file section.main .info .part1 .inputs fieldset.vital_modifiers div div select {
+    font-size: 2vmax;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.regular_habits {
+  margin: 0% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 4vmax;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.check {
+    width: 100%;
+    margin: 5% 0 10% 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.check div {
+  margin: 1%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.check div {
+    width: 50%;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.check div label {
+  margin: 0 5% 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.check div label {
+    font-size: 2.5vmax;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.check div input {
+  width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.check div input {
+    font-size: 2.5vmax;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.select {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.select div {
+  margin: 1%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.select div {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.select div label {
+    font-size: 3vmax;
+  }
+}
+
+.container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.select div input {
+  width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .inputs fieldset.regular_habits div.select div input {
+    font-size: 2.5vmax;
+  }
+}
+
+.container_medical_file section.main .info .part1 .nots {
+  margin: 3% 3% 0 1%;
+  width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part1 .nots {
+    width: 93%;
+  }
+}
+
+.container_medical_file section.main .info .part1 .nots textarea {
+  padding: 2%;
+}
+
+.container_medical_file section.main .info .part2 {
+  width: 100%;
+  margin: 2% 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container_medical_file section.main .info .part2 div.div_ {
+  margin: 1%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part2 div.div_ {
+    width: 94%;
+    margin: 4%;
+  }
+}
+
+.container_medical_file section.main .info .part2 div.div_ .title {
+  font-size: 1.3vmax;
+  text-align: center;
+  background-color: #ccc;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part2 div.div_ .title {
+    font-size: 3vmax;
+  }
+}
+
+.container_medical_file section.main .info .part2 div.div_ .cont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_medical_file section.main .info .part2 div.div_ .cont ul li {
+  font-size: 1.2vmax;
+  margin: 2% 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container_medical_file section.main .info .part2 div.div_ .cont ul li {
+    font-size: 2.5vmax;
+  }
+}
+/*# sourceMappingURL=MainSASS.css.map */

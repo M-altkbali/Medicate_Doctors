@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Service provider </title>
+
+    <link rel="stylesheet" href="css/scss/MainSASS.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" <!-- #region dash-->
+
+    <!-- Custom box css -->
+    <link href="dash/css/custombox.min.css" rel="stylesheet">
+
+    <!--calendar css-->
+    <link href="dash/css/fullcalendar.min.css" rel="stylesheet" />
+
+    <!-- App css -->
+    <link href="dash/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="dash/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="dash/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="dash/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="dash/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="dash/css/menu1.css" rel="stylesheet" type="text/css" />
+    <link href="dash/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="dash/css/switchery.min.css">
+
+    <script src="dash/js/modernizr.min.js"></script>
+</head>
+
+<body id="dir">
+
+    <header id="topnav">
+        <div class="topbar-main">
+            <div class="container">
+                <div class="menu-extras">
+
+                    <ul class="nav navbar-nav navbar-right pull-right">
+
+                        <li class="navbar-c-items">
+                            <form role="search" class="navbar-left app-search pull-left hidden-xs">
+                                <input type="text" placeholder="Search..." class="form-control" key="search">
+                                <a href=""><i class="fa fa-search"></i></a>
+                            </form>
+                        </li>
+                        <li>
+                            <a class="translatear" id="ar">Ar</a>
+                        </li>
+                        <li>
+                            <a class="translateen" id="en">EN</a>
+                        </li>
+
+                    </ul>
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+                <!-- end menu-extras -->
+
+            </div> <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+
+        <div class="navbar-custom">
+            <div class="container">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li class="has-submenu home ">
+
+                            <a href="Medicate-Doctor.html" id="home"><img src="img/home.png" alt=""></a>
+
+                        </li>
+
+                        <li class="has-submenu button ">
+
+                            <a href="doctors.html" key="doctors" class="" style="color: white;"> <i
+                                    class="fas fa-stethoscope"></i>
+                                Doctors</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="add-doctor.html" class="btn btn-primary " id="btn_add-doctor"
+                                        key="add">Add</a>
+                                </li>
+                                <li>
+                                    <a href="update-doctor.html" class="btn btn-primary" id="btn_update-doctor"
+                                        key="update">Update</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-primary" key="delete">Delate</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu button ">
+
+                            <a href="medicine.html" style="color: white;" id="btn_add-medicin" key="medicins"> <i
+                                    class="fas fa-pills"></i>
+                                Medicins</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="add-medicine.html" class="btn btn-primary " key="add">Add</a>
+                                </li>
+                                <li>
+                                    <a href="update-medicine.html" class="btn btn-primary" key="update">Update</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-primary" key="delete">Delete</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu button ">
+                            <a href="service_provider.html" style="color: white" key="sirvices_provider"> <i
+                                    class="fas fa-building"></i> Sirvices provider</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span key="dental_clinic">Dental clinic</span>
+                                        </li>
+                                        <li><a href="#" class="btn btn-primary" key="add">Add</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="update">Update</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="delete">Delete</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span key="residential_clinic">Residential clinic</span>
+                                        </li>
+                                        <li><a href="#" class="btn btn-primary" key="add">Add</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="update">Update</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="delete">Delete</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span key="non-residential_clinic">Non-residential clinic</span>
+                                        </li>
+                                        <li><a href="#" class="btn btn-primary" key="add">Add</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="update">Update</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="delete">Delete</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span key="pharmacy">pharmacy</span>
+                                        </li>
+                                        <li><a href="#" class="btn btn-primary" key="add">Add</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="update">Update</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="delete">Delete</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span key="analysis_center">Analysis center</span>
+                                        </li>
+                                        <li><a href="#" class="btn btn-primary" key="add">Add</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="update">Update</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="delete">Delete</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span key="diagnostic_center">Diagnostic center</span>
+                                        </li>
+                                        <li><a href="#" class="btn btn-primary" key="add">Add</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="update">Update</a></li>
+                                        <li><a href="#" class="btn btn-primary" key="delete">Delete</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu button ">
+                            <a href="appointment.html" style="color: white" key="doctors_appointment"> <i
+                                    class="far fa-calendar-alt"></i> Doctors appointment</a>
+                            <ul class="submenu" id="btn_add-appo">
+                                <li class="has-submenu">
+                                    <a href="add-appointment.html" class="btn btn-primary" key="add">Add</a>
+                                    <ul class="submenu">
+                                        <li><a href="#" class="btn btn-primary">**</a></li>
+                                        <li><a href="#" class="btn btn-primary">**</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="update-appointment.html" class="btn btn-primary" key="update">Update</a>
+                                    <ul class="submenu">
+                                        <li><a href="#" class="btn btn-primary">**</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#" class="btn btn-primary" key="delete">Delete</a>
+                                    <ul class="submenu">
+                                        <li><a href="#" class="btn btn-primary">**</a></li>
+                                        <li><a href="#" class="btn btn-primary">**</a></li>
+                                        <li><a href="#" class="btn btn-primary">**</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <!-- #region li plus-->
+
+                        <!-- <li class="has-submenu">
+                            <a href="#"><i class="mdi mdi-google-pages"></i>Pages</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="page-starter.html">Starter Page</a></li>
+                                        <li><a href="page-login.html">Login</a></li>
+                                        <li><a href="page-register.html">Register</a></li>
+                                        <li><a href="page-logout.html">Logout</a></li>
+                                        <li><a href="page-recoverpw.html">Recover Password</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="page-lock-screen.html">Lock Screen</a></li>
+                                        <li><a href="page-confirm-mail.html">Confirm Mail</a></li>
+                                        <li><a href="page-404.html">Error 404</a></li>
+                                        <li><a href="page-404-alt.html">Error 404-alt</a></li>
+                                        <li><a href="page-500.html">Error 500</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#"><i class="mdi mdi-book-multiple"></i>Extras</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="extras-profile.html">Profile</a></li>
+                                        <li><a href="extras-sitemap.html">Sitemap</a></li>
+                                        <li><a href="extras-about.html">About Us</a></li>
+                                        <li><a href="extras-contact.html">Contact</a></li>
+                                        <li><a href="extras-members.html">Members</a></li>
+                                        <li><a href="extras-timeline.html">Timeline</a></li>
+                                        <li><a href="extras-invoice.html">Invoice</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="extras-search-result.html">Search Result</a></li>
+                                        <li><a href="extras-emailtemplate.html">Email Template</a></li>
+                                        <li><a href="extras-maintenance.html">Maintenance</a></li>
+                                        <li><a href="extras-coming-soon.html">Coming Soon</a></li>
+                                        <li><a href="extras-faq.html">FAQ</a></li>
+                                        <li><a href="extras-gallery.html">Gallery</a></li>
+                                        <li><a href="extras-pricing.html">Pricing</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#"><i class="mdi mdi-comment-text"></i>Blog</a>
+                            <ul class="submenu">
+                                <li><a href="blogs-dashboard.html">Dashboard</a></li>
+                                <li><a href="blogs-blog-list.html">Blog List</a></li>
+                                <li><a href="blogs-blog-column.html">Blog Column</a></li>
+                                <li><a href="blogs-blog-post.html">Blog Post</a></li>
+                                <li><a href="blogs-blog-add.html">Add Blog</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#"><i class="mdi mdi-home-map-marker"></i>Real Estate</a>
+                            <ul class="submenu">
+                                <li><a href="real-estate-dashboard.html">Dashboard</a></li>
+                                <li><a href="real-estate-list.html">Property List</a></li>
+                                <li><a href="real-estate-column.html">Property Column</a></li>
+                                <li><a href="real-estate-detail.html">Property Detail</a></li>
+                                <li><a href="real-estate-agents.html">Agents</a></li>
+                                <li><a href="real-estate-profile.html">Agent Details</a></li>
+                                <li><a href="real-estate-add.html">Add Property</a></li>
+                            </ul>
+                        </li> -->
+
+
+
+                        <li>
+                            <!-- Logo container-->
+                            <div class="logo">
+                                <!-- Image Logo -->
+                                <a href="index.html" class="logo">
+                                    <img src="img/medicate_logo.png" alt="logo" height="100">
+                                </a>
+
+                            </div>
+                        </li>
+
+
+
+                        <!-- #endregion -->
+
+                    </ul>
+
+                    <!-- End Logo container-->
+
+                    <!-- End navigation menu -->
+                </div> <!-- end #navigation -->
+            </div> <!-- end container -->
+        </div> <!-- end navbar-custom -->
+    </header>
+
+
+    <main>
+
+
+        <!-- <div class="row">
+            <div class="col-sm-12">
+                <div class="card-box table-responsive" dir="rtl">
+
+                    <h4 class="m-t-0 header-title" key=""><b> مزودي الخدمة </b></h4>
+
+                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap"
+                        cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center;" key="">رقم الطبيب</th>
+                                <th style="text-align: center;" key="">الاسم</th>
+                                <th style="text-align: center;" key="">التخصص</th>
+                                <th style="text-align: center;" key="">الدرجة العليمية</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger</td>
+                                <td>Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> -->
+
+    </main>
+</body>
+
+<!-- jQuery  -->
+<script src="dash/js/jquery.min.js"></script>
+<script src="dash/js/bootstrap.min.js"></script>
+<script src="dash/js/detect.js"></script>
+<script src="dash/js/fastclick.js"></script>
+<script src="dash/js/jquery.blockUI.js"></script>
+<script src="dash/js/waves.js"></script>
+<script src="dash/js/jquery.slimscroll.js"></script>
+<script src="dash/js/jquery.scrollTo.min.js"></script>
+<script src="dash/js/switchery.min.js"></script>
+
+
+
+<!-- Jquery-Ui -->
+<script src="dash/js/jquery-ui.min.js"></script>
+
+<script src="js/medicate-doctor.js"></script>
+
+<!-- BEGIN PAGE SCRIPTS -->
+<script src="dash/js/moment.js"></script>
+<script src='dash/js/fullcalendar.min.js'></script>
+<script src="dash/js/jquery.fullcalendar.js"></script>
+
+
+<!-- Modal-Effect -->
+<script src="dash/js/custombox.min.js"></script>
+<script src="dash/js/legacy.min.js"></script>
+
+<!-- App js -->
+<script src="dash/js/jquery.core.js"></script>
+<script src="dash/js/jquery.app.js"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+        (function () {
+            function refreshCSS() {
+                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                }
+            }
+            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+            var address = protocol + window.location.host + window.location.pathname + '/ws';
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+                if (msg.data == 'reload') window.location.reload();
+                else if (msg.data == 'refreshcss') refreshCSS();
+            };
+            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                console.log('Live reload enabled.');
+                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+            }
+        })();
+    }
+    else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+	// ]]>
+</script>
+
+<!-- Examples -->
+<script src="dash/js/jquery.magnific-popup.min.js"></script>
+<script src="dash/js/jquery.dataTables.js"></script>
+<script src="dash/js/dataTables.bootstrap.js"></script>
+<script src="dash/js/mindmup-editabletable.js"></script>
+<script src="dash/js/numeric-input-example.js"></script>
+
+<script src="dash/js/jquery.datatables.editable.init.js"></script>
+
+<script>
+    $('#mainTable').editableTableWidget().numericInputExample().find('td:first').focus();
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#datatable').dataTable();
+        $('#datatable-keytable').DataTable({ keys: true });
+        $('#datatable-responsive').DataTable();
+        $('#datatable-colvid').DataTable({
+            "dom": 'C<"clear">lfrtip',
+            "colVis": {
+                "buttonText": "Change columns"
+            }
+        });
+        $('#datatable-scroller').DataTable({
+            ajax: "../plugins/datatables/json/scroller-demo.json",
+            deferRender: true,
+            scrollY: 380,
+            scrollCollapse: true,
+            scroller: true
+        });
+        var table = $('#datatable-fixed-header').DataTable({ fixedHeader: true });
+        var table = $('#datatable-fixed-col').DataTable({
+            scrollY: "300px",
+            scrollX: true,
+            scrollCollapse: true,
+            paging: false,
+            fixedColumns: {
+                leftColumns: 1,
+                rightColumns: 1
+            }
+        });
+    });
+    TableManageButtons.init();
+
+</script>
+<script src="js/trany.js"></script>
+
+</html>

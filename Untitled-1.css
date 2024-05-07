@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.activate,
+.btn-header:hover {
+  background-color: #c56e6e;
+  color: white;
+}
+
+header div.topbar-main {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1%;
+}
+
+header div.navbar-custom {
+  width: 100%;
+}
+
+header div.navbar-custom .container {
+  width: 100%;
+}
+
+header div.navbar-custom .container #navigation {
+  width: 100%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.home {
+  margin: 1.5% 1%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.button {
+  background-color: #233241;
+  width: 20%;
+  padding: 1%;
+  margin: 1%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.button a img {
+  margin: 0 0 0 2%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.button ul li {
+  margin: 2%;
+}
+
+header div.navbar-custom .container #navigation ul.navigation-menu li.button ul li ul.submenu {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main .container_ {
+  margin: 5% 10%;
+}
+
+main .container_ .title {
+  padding: 15px 25px 15px 25px;
+  line-height: 22px;
+  font-size: 18px;
+  background-color: #313a46;
+  color: #ffffff;
+  margin: 0;
+}
+
+main .container_ .content {
+  padding: 20px;
+  background-color: white;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container_ .content div.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2% 0;
+}
+
+main .container_ .content div.inputs .comp {
+  margin: 0 2%;
+}
+
+main .container_ .content div.inputs .comp select {
+  width: 200px;
+}
+
+main .container_ .content .appo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+  background-color: rgba(47, 79, 79, 0.26);
+  padding: 2%;
+  margin: 5%;
+}
+
+main .container_ .content .appo .weeks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container_ .content .appo .weeks div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .container_ .content .appo .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container_update-doctor .col-sm-12 .panel .panel-body div table thead tr th {
+  text-align: center;
+}
+
+main .container_add-medicine form div.inputs .comp .concentration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container_add-medicine form div.inputs .comp .concentration .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container_add-medicine form div.inputs .comp .concentration .inputs input {
+  margin: 2%;
+}
+
+main .container_add-medicine form div.inputs .comp .concentration i {
+  margin: 5%;
+}
+/*# sourceMappingURL=Untitled-1.css.map */

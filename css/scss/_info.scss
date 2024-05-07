@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/cs//s2?family=Raleway:wght@200&display=swap");
+input,
+select,
+textarea {
+    border: 1px solid cadetblue;
+    border-radius: 8px;
+    padding: 1% 2%;
+    width: 100%;
+}
+* {
+    // font-family: "EB Garamond", serif;
+    font-family: "Raleway", sans-serif;
+    &:focus {
+        outline: none;
+    }
+}
+button,
+a,
+select,
+input[type="date"] {
+    cursor: pointer;
+}
+
+.container_medical_file .main .navbar button.active {
+    background-color: #084949;
+    color: white;
+}
+.container_medical_file {
+    header {
+        width: 100%;
+        background-color: #084949;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 300px;
+            @media only screen and (max-width: 768px) {
+                width: 200px;
+            }
+        }
+
+        .trans {
+            margin: 3% 10% 0 10%;
+            @media only screen and (max-width: 768px) {
+                margin: 6% 20% 0 0%;
+            }
+            ul {
+                display: flex;
+                div {
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    margin: 0 5%;
+                    padding: 5% 10%;
+                    @media only screen and (max-width: 768px) {
+                        padding: 5% 10%;
+                    }
+                    &:hover {
+                        background-color: #749e9e6e;
+                    }
+                    li {
+                        font-size: 1.2vmax;
+                        list-style: none;
+                        color: white;
+                        cursor: pointer;
+                        @media only screen and (max-width: 768px) {
+                            font-size: 2vmax;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.patient_data {
+        fieldset {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin: 3% 0 0 3%;
+            padding: 2%;
+            border-radius: 5px;
+            @media only screen and (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+                font-size: 4vmax;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                @media only screen and (max-width: 768px) {
+                    margin: 2%;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1% 1%;
+                    width: 30%;
+                    @media only screen and (max-width: 768px) {
+                        width: 90%;
+                    }
+                    label {
+                        font-size: 1.2vmax;
+                        @media only screen and (max-width: 768px) {
+                            font-size: 3vmax;
+                        }
+                    }
+                    input,
+                    select {
+                        font-size: 1.2vmax;
+                        width: 100%;
+                        @media only screen and (max-width: 768px) {
+                            font-size: 2.5vmax;
+                        }
+                    }
+                }
+            }
+            .image {
+                width: 150px;
+                height: 120px;
+                // background-color: #08494978;
+                border-radius: 5px;
+                img {
+                }
+            }
+        }
+    }
+
+    section.main {
+        display: flex;
+        margin: 3%;
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+        .navbar {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 0.5px solid #ddd;
+            border-radius: 10px 0 0 10px;
+            padding: 1%;
+            @media only screen and (max-width: 768px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+                margin: 1% 1% 2% 0;
+                justify-content: space-evenly;
+            }
+            button {
+                width: 80%;
+                margin: 6% 0;
+                padding: 10%;
+                background-color: transparent;
+                border: 1px solid #084949;
+                border-radius: 5px;
+                font-size: 1.2vmax;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media only screen and (max-width: 768px) {
+                    width: 30%;
+                    padding: 3%;
+                    margin: 1%;
+                    font-size: 2.5vmax;
+                }
+                &:hover {
+                    color: #fff;
+                    background-color: #084949;
+                }
+                i {
+                    font-size: 1.5vmax;
+                    margin: 1%;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 2.5vmax;
+                    }
+                }
+            }
+        }
+        .info {
+            width: 80%;
+            border: 0.5px solid #ddd;
+            border-radius: 0 10px 10px 0;
+            padding: 1%;
+            // background-color: darkgray;
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+            .part1 {
+                display: flex;
+                @media only screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
+                .inputs {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+                    fieldset.vital_modifiers {
+                        margin: 2% 1%;
+                        @media only screen and (max-width: 768px) {
+                            padding-bottom: 5%;
+                            font-size: 4vmax;
+                        }
+                        div {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            @media only screen and (max-width: 768px) {
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            div {
+                                width: 30%;
+                                margin: 1% 1%;
+                                @media only screen and (max-width: 768px) {
+                                    width: 80%;
+                                }
+                                label {
+                                    @media only screen and (max-width: 768px) {
+                                        font-size: 2.5vmax;
+                                    }
+                                }
+                                input,
+                                select {
+                                    @media only screen and (max-width: 768px) {
+                                        font-size: 2vmax;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    fieldset.regular_habits {
+                        margin: 0% 1%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        @media only screen and (max-width: 768px) {
+                            flex-direction: column;
+                            font-size: 4vmax;
+                        }
+                        div.check {
+                            // background-color: rgb(134, 89, 89);
+                            display: flex;
+                            // flex-direction: column;
+                            align-items: center;
+                            width: 50%;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            @media only screen and (max-width: 768px) {
+                                width: 100%;
+                                margin: 5% 0 10% 0;
+                                justify-content: center;
+                            }
+
+                            div {
+                                // background-color: darkkhaki;
+
+                                margin: 1%;
+                                width: 40%;
+                                display: flex;
+                                align-items: baseline;
+
+                                @media only screen and (max-width: 768px) {
+                                    width: 50%;
+                                }
+                                label {
+                                    margin: 0 5% 0 0;
+                                    @media only screen and (max-width: 768px) {
+                                        font-size: 2.5vmax;
+                                    }
+                                }
+                                input {
+                                    width: 30%;
+                                    // &:nth-child(3) {
+                                    //     width: 30%;
+                                    //     margin: 1%;
+                                    // }
+                                    @media only screen and (max-width: 768px) {
+                                        font-size: 2.5vmax;
+                                    }
+                                }
+                                // &:nth-child(4) {
+                                //     width: 100%;
+                                // }
+                            }
+                        }
+
+                        div.select {
+                            // background-color: rgb(150, 132, 132);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50%;
+                            flex-wrap: wrap;
+                            @media only screen and (max-width: 768px) {
+                                width: 100%;
+                                margin-bottom: 5%;
+                            }
+                            div {
+                                // background-color: darkkhaki;
+                                margin: 1%;
+                                width: 40%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                @media only screen and (max-width: 768px) {
+                                    width: 90%;
+                                }
+                                label {
+                                    @media only screen and (max-width: 768px) {
+                                        font-size: 3vmax;
+                                    }
+                                }
+                                input {
+                                    width: 30%;
+                                    @media only screen and (max-width: 768px) {
+                                        font-size: 2.5vmax;
+                                    }
+                                    // &:nth-child(3) {
+                                    //     width: 30%;
+                                    //     margin: 1%;
+                                    // }
+                                }
+                                // &:nth-child(4) {
+                                //     width: 100%;
+                                // }
+                            }
+                        }
+                    }
+                }
+                .nots {
+                    margin: 3% 3% 0 1%;
+                    width: 20%;
+                    @media only screen and (max-width: 768px) {
+                        width: 93%;
+                    }
+                    textarea {
+                        padding: 2%;
+                    }
+                }
+            }
+
+            .part2 {
+                width: 100%;
+                // height: 50vh;
+                margin: 2% 0 0 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                @media only screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                div.div_ {
+                    margin: 1%;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                    @media only screen and (max-width: 768px) {
+                        width: 94%;
+                        margin: 4%;
+                    }
+                    .title {
+                        font-size: 1.3vmax;
+                        text-align: center;
+                        background-color: #ccc;
+                        width: 100%;
+                        @media only screen and (max-width: 768px) {
+                            font-size: 3vmax;
+                        }
+                    }
+                    .cont {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        ul {
+                            li {
+                                font-size: 1.2vmax;
+                                margin: 2% 0 0 0;
+                                @media only screen and (max-width: 768px) {
+                                    font-size: 2.5vmax;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
